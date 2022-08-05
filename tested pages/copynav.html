@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: rgb(0, 179, 255);
+        }
+
+        .navcol-2 ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown a {
+            padding: 1em 2em 1em 1em;
+            text-decoration: none;
+            font-size: 1rem;
+            border: none;
+            outline: none;
+            color: white;
+            /* padding: 1rem; */
+            margin: 0;
+            /* background: black; */
+        }
+
+        .dropdown-content {
+            margin-top: 15px;
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            border-radius: 2%;
+        }
+
+        .dropdown-content:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 23%;
+            margin-left: -15px;
+            margin-top: -10px;
+            width: 0;
+            z-index: 1;
+            height: 0;
+            border-bottom: solid 15px #FFF;
+            border-left: solid 15px transparent;
+            border-right: solid 15px transparent;
+        }
+
+        .arrow-box {
+            background-color: white;
+            width: 12rem;
+            border-radius: 10px;
+        }
+
+        .sec {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .sec p a {
+            color: black;
+            padding: 0 !important;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .sec p {
+            text-transform: capitalize;
+        }
+
+        .sec img {
+            width: 36px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- Main menu -->
+        <div class="navcol-2">
+            <ul>
+                <div class="dropdown">
+                    <a href="#">Discover</a>
+                    <div class="dropdown-content">
+                        <div class="arrow-box">
+                            <div class="sec">
+                                <img src="images/monitoring.png" alt="monitoring">
+                                <p><a href="#">our services</a></p>
+                            </div>
+                            <div class="sec">
+                                <img src="images/search.png" alt="search">
+                                <p><a href="#">about us</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </header>
+</body>
+
+</html>

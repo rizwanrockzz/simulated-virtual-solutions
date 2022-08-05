@@ -1,0 +1,66 @@
+https://codepen.io/desandro/pen/BzJZQv
+
+
+/*
+@media (min-width: 600px) {
+  .Gradient:after {
+    background: radial-gradient(
+          var(--gradientColorZero) 40%,
+          var(--gradientColorTwoTransparent) 60%
+        ) -420px -180px no-repeat,
+      radial-gradient(
+          var(--gradientColorThree) 23%,
+          var(--gradientColorThreeTransparent) 70%
+        )
+        240px -24px no-repeat,
+      radial-gradient(
+          var(--gradientColorTwo) 30%,
+          var(--gradientColorTwoTransparent) 70%
+        ) -270px 220px no-repeat,
+      var(--gradientColorZero);
+  }
+}
+@media (min-width: 900px) {
+  .Gradient:after {
+    background: radial-gradient(
+          var(--gradientColorThree) 23%,
+          var(--gradientColorThreeTransparent) 67% 100%
+        )
+        385px -24px,
+      radial-gradient(
+          var(--gradientColorOne) 0,
+          var(--gradientColorOneTransparent) 60% 100%
+        ) -940px 290px,
+      radial-gradient(
+          var(--gradientColorTwo) 10%,
+          var(--gradientColorTwoTransparent) 60% 100%
+        ) -120px 250px,
+      radial-gradient(
+          var(--gradientColorOne) 40%,
+          var(--gradientColorOneTransparent) 57% 100%
+        )
+        495px -44px,
+      radial-gradient(
+          var(--gradientColorZero) 30%,
+          var(--gradientColorZeroTransparent) 67% 100%
+        )
+        122px -120px,
+      radial-gradient(
+          var(--gradientColorZero) 10%,
+          var(--gradientColorZeroTransparent) 60% 100%
+        ) -420px 120px,
+      radial-gradient(
+          var(--gradientColorTwo) 15%,
+          var(--gradientColorTwoTransparent) 50% 100%
+        ) -620px 0,
+      radial-gradient(
+          var(--gradientColorTwo) 25%,
+          var(--gradientColorTwoTransparent) 50% 100%
+        )
+        520px -250px,
+      var(--gradientColorZero);
+    background-repeat: repeat-y;
+  }
+}
+
+*/

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.contianer {
+  width: 100%;
+  /* height: inherit; */
+  background-color: #2f2f2f;
+}
+
+.text-heading {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.sub-text {
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+  font-weight: 500;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-icon {
+  padding: 1.7rem;
+}
+
+.img-icon img {
+  width: 170px;
+}
+
+.text-content {
+  color: rgb(17, 211, 17);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.content {
+  text-align: start;
+  font-size: 1.3rem;
+  margin: 10px;
+  color: gray;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  margin: 1rem auto;
+}
+
+/* payment */
+
+.payment-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.payment-info {
+  padding: 2rem;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 7px 19px 0px;
+}
+
+.payment-info h1 {
+  text-align: center;
+}
+
+.percent {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.stage {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.box {
+  text-align: center;
+  margin: 30px;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 7px 19px 0px;
+}
+
+.box-wrap {
+  /* display: flex; */
+  /* flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 100px;
+}
+
+/* mobile nav */
+
+@media only screen and (max-width: 450px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .payment-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-info {
+    padding: 0;
+    margin: 0;
+  }
+
+  .box {
+    margin: 20px;
+    /* padding: 1rem; */
+  }
+
+  .image {
+    width: calc(100% - 40px);
+    margin-bottom: 40px;
+  }
+
+  .box-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+

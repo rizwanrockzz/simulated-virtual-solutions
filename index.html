@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/fa9530214e.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <title>Simulated Virtual Solutions</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+
+  <header>
+    <!-- Logo image -->
+    <div class="navcol-1">
+      <a href="https://www.simulatedvirtualsolutions.com/" class="main-logo-link"><img src="images/main-logo-final.png"
+          alt="svs main logo" /></a>
+    </div>
+    <!-- Main menu -->
+    <div class="navcol-2">
+      <ul>
+        <div class="dropdown">
+          <a class="discover" href="#">Discover</a>
+          <div class="dropdown-content">
+            <div class="arrow-box">
+              <a href="./pages/services.html" class="sec">
+                <img src="images/monitoring.png" alt="monitoring" />
+                <p>our services</p>
+              </a>
+              <a href="./pages/gallery.html" class="sec">
+                <img src="images/picture.png" alt="picture" />
+                <p>gallery</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <li><a href="./pages/developers.html">Developers</a></li>
+        <li><a href="./pages/pricing.html">Pricing</a></li>
+        <li><a href="./pages/about.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="mobile-hamburger">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</span>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+
+  <div id="mobile-nav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a class="collapsible" href="#">Discover</a>
+      <div class="panel">
+        <ul class="mobile-discover">
+          <a href="./pages/services.html">
+            <li>
+              <img src="images/monitoring.png" alt="monitoring" />
+              <p>our services</p>
+            </li>
+          </a>
+          <a href="./pages/gallery.html">
+            <li>
+              <img src="images/picture.png" alt="picture" />
+              <p>gallery</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <a href="./pages/developers.html">Developers</a>
+      <a href="./pages/pricing.html">Pricing</a>
+      <a href="./pages/about.html">About Us</a>
+    </div>
+  </div>
+
+  <!-- Gradient Canvas -->
+  <canvas id="canvas" class="gradient-block" width="2" height="2"></canvas>
+
+  <!-- Main Heading -->
+  <section class="main-hero">
+    <div class="text-ar align-center">
+      <h3>Architectural Visualization using Virtual Reality</h3>
+      <p>
+        With the use of
+        <span class="vr-weight stylish-underline \"> Virtual Reality</span>
+        providing the immersive sensation of actually being inside a building
+        this helps both clients and construction companies by providing an
+        efficient communication medium
+      </p>
+      <button class="btn">
+        <a href="tel:+919059248577" class="make-a-call">Enquire Now <i
+            class="fa-solid fa-phone fa-shake icon-color"></i></a>
+      </button>
+    </div>
+
+    <div class="img-pic align-center">
+      <img class="hero-pic" src="images/main-pic.png" alt="main-vr" />
+    </div>
+  </section>
+
+  <!-- Brand Images Section -->
+
+  <div class="our-clients">
+    <h3 class="brand-clients-heading">
+      Our<span class="stylish-underline"> Clients</span>
+    </h3>
+    <div class="block-1">
+      <div class="img-1 align-center">
+        <img src="images/jr-nest-logo.PNG" alt="Jr nest logo" />
+      </div>
+      <div class="img-2 align-center">
+        <img src="images/it-logo.png" alt="It logo" />
+      </div>
+      <div class="img-3 align-center">
+        <img src="images/vrsec-logo.png" alt="vrsec logo" />
+      </div>
+    </div>
+    <div class="block-2">
+      <div class="img-4 align-center">
+        <img src="images/focus-studio-logo.png" alt="Focus studio logo" />
+      </div>
+      <div class="img-5 align-center">
+        <img src="images/shaurya-logo.png" alt="shaurya logo" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Works Section -->
+
+  <div class="works">
+    <h2>Our Designs</h2>
+    <h2>
+      <strong class="stylish-underline">Recently</strong> Worked Projects
+    </h2>
+  </div>
+
+  <!-- Video Section -->
+
+  <!-- video - 1 -->
+  <div class="vid-text-grid">
+    <div class="video-section block-center">
+      <video muted loop infinite autoplay>
+        <source src="videos/hall.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="vid-desc block-center">
+      <h2>hall design</h2>
+      <p>
+        A house is made of walls and beams a home is built of
+        <span class="gradient-txt"> love and dreams</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- video - 2 -->
+  <div class="vid-text-grid for-mobile-flex">
+    <div class="vid-desc block-center">
+      <h2>bed room design</h2>
+      <p>
+        When you go all over the world for work, Your<span class="gradient-txt">
+          dream vacation </span>is your bedroom
+      </p>
+    </div>
+    <div class="video-section block-center">
+      <video muted loop infinite autoplay>
+        <source src="videos/bed.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <!-- video - 3 -->
+  <div class="vid-text-grid">
+    <div class="video-section block-center">
+      <video muted loop infinite autoplay>
+        <source src="videos/kitchen.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="vid-desc block-center">
+      <h2>kitchen design</h2>
+      <p>
+        The secret ingredient is always<span class="gradient-txt"> LOVE</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- video - 4 -->
+  <div class="vid-text-grid for-mobile-flex">
+    <div class="vid-desc block-center">
+      <h2>dining design</h2>
+      <p>
+        The dining table is
+        <span class="gradient-txt"> heart of HOME</span>
+      </p>
+    </div>
+    <div class="video-section block-center">
+      <video muted loop infinite autoplay>
+        <source src="videos/dinning.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer-section">
+    <div class="foot-grid">
+      <div class="col-1 align-center">
+        <h3>our products</h3>
+        <ul>
+          <li><a href="./pages/services.html#our-services">Rendered Pictures</a></li>
+          <li><a href="./pages/services.html#3d-walkthroughs">3D Walkthroughs</a></li>
+          <li><a href="./pages/services.html#virtual-models">Virtual Model</a></li>
+          <li><a href="./pages/services.html#virtual-models">Real time customization</a></li>
+        </ul>
+      </div>
+      <div class="col-1 align-center">
+        <h3>useful links</h3>
+        <ul>
+          <li><a href="./pages/services.html">Services</a></li>
+          <li><a href="./pages/developers.html">Developers</a></li>
+          <li><a href="./pages/pricing.html">Pricing</a></li>
+          <li><a href="./pages/about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col-1 align-center">
+        <h3>contact info</h3>
+        <ul>
+          <li class="mobile-view-flex">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <span class="phone-numbers big-screen-view">
+              <a href="tel:+919059248577">+91 90592 48577</a>,
+              <a href="tel:+919347735366">+91 93477 35366</a></span>
+            <span class="phone-numbers mobile-view">
+              <p><a href="tel:+919059248577">+91 90592 48577</a></p>
+              <p><a href="tel:+919347735366">+91 93477 35366</a></p>
+            </span>
+          </li>
+          <li class="set-email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>
+              <a href="mailto:simulatedvirtualsolutions@gmail.com">
+                simulatedvirtualsolutions<span class="mail-big">@gmail.com</span>
+                <span class="mail-small"> @gmail.com</span>
+              </a>
+            </p>
+          </li>
+          <li class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>VRSEC IT Department Kanuru ,Vijayawada 520007</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright-social">
+    <div class="grid-copy-wrap">
+      <div class="company-logo align-center">
+        <img src="images/logo.png" alt="company-logo" />
+      </div>
+      <div class="copy-right align-center">
+        <p>© 2022 simulatedvirtualsolutions.com</p>
+      </div>
+      <div class="social-links align-center">
+        <a href="https://www.facebook.com/Simulated-virtual-solutions-private-limited-100229749364476"
+          class="facebook-link" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/svs_pvt.ltd/" class="instagram" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/SVS_PvtLtd" class="twitter" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- endcredits -->
+
+  <div class="footer-line">
+    <p class="footer-tag">
+      Made with <i class="fa-solid fa-heart fa-beat"></i>
+    </p>
+    <!-- <span class="love-img"> <img src="images/love.png" alt="love-with-arrow">
+        </span> -->
+    <p>in</p>
+    <span class="india-img"><img src="images/india.png" alt="india-flag" /></span>
+  </div>
+
+  <div class="whatsapp-contact">
+    <a href="https://wa.me/919059248577" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp icon"
+        align="right" /></a>
+  </div>
+
+  <!-- Branding -->
+  <div class="branding-background">
+    <img src="images/gradient-logo.gif" alt="gradient-logo" />
+    <h1 class="branding">simulated virtual solutions</h1>
+  </div>
+</body>
+<script src="js/animate.js"></script>
+<script src="js/app.js"></script>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- shake css -->
+    <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.css" />
+    <script src="https://kit.fontawesome.com/fa9530214e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .grid {
+            width: calc(100% - 250px);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .box:hover .left-txt {
+            opacity: 1;
+            margin-right: 380px;
+            transition: .5s margin-right ease-in-out;
+        }
+
+        .box:hover .right-txt {
+            opacity: 1;
+            margin-left: 365px;
+            padding-left: 20px;
+            transition: .5s margin-left ease-in-out;
+        }
+
+        .box:hover img {
+            border-radius: 15%;
+            transition: .5s all ease-in-out;
+        }
+
+        .intro {
+            position: absolute;
+            opacity: 0;
+            color: white;
+            width: 40%;
+            padding: 0.6rem;
+            border-radius: 10px;
+            background: #ee0979;
+            background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+            background: linear-gradient(to right, #ff6a00, #ee0979);
+            z-index: -1;
+
+        }
+
+        .intro .name {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .intro .post {
+            text-transform: capitalize;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .rizwan,
+        .kalpana {
+            margin-left: 15px;
+        }
+
+        .mahith,
+        .kranthi {
+            margin-right: 15px;
+        }
+
+        .made-by {
+            padding: 1.4rem;
+        }
+
+        .made-by p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+
+        .made-by .rizwan-p,
+        .mahith-p {
+            margin: auto 6px;
+        }
+
+        .fa-solid {
+            margin: auto 10px;
+        }
+
+        .fa-heart {
+            color: red;
+        }
+
+        .box {
+            position: relative;
+
+        }
+
+        .overlay-social {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .box:hover .overlay-social {
+            opacity: 1;
+        }
+
+        .txt {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">
+            <div class="intro left-txt">
+                <p class="name">rizwan</p>
+                <p class="post">web developer</p>
+            </div>
+            <img class="rizwan" src="images/rizwan.jpeg" alt="">
+            <!-- <div class="overlay-social">
+                <div class="txt">hello</div>
+            </div> -->
+        </div>
+        <div class="box">
+            <img class="mahith" src="images/mahith-2.jpeg" alt="">
+            <div class="intro right-txt">
+                <p class="name">mahith</p>
+                <p class="post">web developer</p>
+            </div>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="box">
+            <div class="intro left-txt">
+                <p class="name">Kalpana Petluri</p>
+                <p class="post">Director</p>
+            </div>
+            <img class="kalpana" src="images/kalpana-crop.jpg" alt="">
+
+        </div>
+        <div class="box">
+            <img class="kranthi" src="images/kranthi-crop.jpeg" alt="">
+            <div class="intro right-txt">
+                <p class="name">Kranthi Malla</p>
+                <p class="post">Managing Director</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="made-by">
+        <p>
+            made with <i class="fa-solid fa-heart fa-beat"></i> by
+            <span class="shake-chunk shake-constant rizwan-p"> @Rizwan </span>
+            &
+            <span class="shake-chunk shake-constant mahith-p"> @Mahith </span>
+        </p>
+    </div>
+
+</body>
+
+</html>
